@@ -26,16 +26,7 @@ RUN \
     #--------------------------------------------------------#
     #
     chmod +x /bin/build_image.sh && \
-    bash /bin/build_image.sh && \
-    #
-    #--------------------------------------------------------#
-    # Enable ssh access for "mpiuser"
-    #--------------------------------------------------------#
-    #
-    adduser --disabled-password --gecos "" ${MPI_USER} && \
-    echo "${MPI_USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
-    mkdir /var/run/sshd && \
-    mkdir -p ${SSH_DIR}
+    bash /bin/build_image.sh
 
 #------------------------------------------------------------#
 # Set the entrypoint and command
