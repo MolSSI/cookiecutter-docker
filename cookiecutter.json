@@ -1,3 +1,5 @@
 {
+    "project_name": "ProjectName",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "image_name": "cms/docker"
 }
