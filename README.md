@@ -10,7 +10,7 @@ With [`cookiecutter` installed](https://cookiecutter.readthedocs.io/en/latest/in
 execute the following command inside the folder you want to create the skeletal repository.
 
 ```bash
-cookiecutter gh:molssi/cookiecutter-cms
+cookiecutter gh:molssi/cookiecutter-docker
 ```
 
 Which fetches this repository from github automatically and prompts the user for some simple information.
