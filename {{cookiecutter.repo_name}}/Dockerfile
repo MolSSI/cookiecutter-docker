@@ -13,23 +13,10 @@ COPY docker/build_image.sh /bin/build_image.sh
 # Build the image using a single RUN command
 #------------------------------------------------------------#
 
-RUN \
-    #
-    #--------------------------------------------------------#
-    # Make the entrypoint file executable
-    #--------------------------------------------------------#
-    #
-    chmod +x /bin/docker-entrypoint.sh && \
-    #
-    #--------------------------------------------------------#
-    # Execute the user-defined build_image.sh script
-    #--------------------------------------------------------#
-    #
-    chmod +x /bin/build_image.sh && \
-    bash /bin/build_image.sh
+RUN bash /bin/build_image.sh
 
 #------------------------------------------------------------#
 # Set the entrypoint
 #------------------------------------------------------------#
 
-ENTRYPOINT ["/bin/docker-entrypoint.sh"]
+ENTRYPOINT ["bash", "/bin/docker-entrypoint.sh"]
