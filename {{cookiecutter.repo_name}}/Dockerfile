@@ -29,7 +29,7 @@ RUN \
     bash /bin/build_image.sh
 
 #------------------------------------------------------------#
-# Set the entrypoint and command
+# Set the entrypoint
 #------------------------------------------------------------#
 
 ENTRYPOINT ["/bin/docker-entrypoint.sh"]
