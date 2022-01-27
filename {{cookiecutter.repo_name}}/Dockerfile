@@ -1,5 +1,5 @@
 #------------------------------------------------------------#
-# Base docker file for the MDI project
+# Base docker file from the MolSSI cookiecutter
 #------------------------------------------------------------#
 
 FROM ubuntu:20.04
